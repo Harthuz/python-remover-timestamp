@@ -41,6 +41,7 @@ inteligência de análise de entender como
 
 - **Python**: Linguagem de programação.
 - **Regex (expressões regulares)**: Para identificar e manipular os intervalos de tempo no texto.
+- **Pyperclip**: Para funcionalidade de copiar para área de transferência.
 
 ## Potenciais Aplicações
 
