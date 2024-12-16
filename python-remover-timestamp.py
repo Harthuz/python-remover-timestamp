@@ -1,4 +1,6 @@
-import re
+import re, pyperclip, module
+
+module.module()
 
 print('Cole aqui:')
 texto = []  # lista para armazenar as linhas digitadas
@@ -22,5 +24,15 @@ texto_sem_tempo = re.sub(regex, '', texto_completo)
 # Exibe o texto sem os tempos
 print(texto_sem_tempo)
 
+print("\nDigite C para copiar para área de tranferência.")
+entrada = input()
+
+if entrada.lower() == 'c':
+    try:
+        pyperclip.copy(texto_sem_tempo)
+        print("\nTexto copiado para a área de transferência!")
+    except Exception as e:
+        print(f"\nErro ao copiar para a área de transferência: {e}")
+
 # Pausa a execução até o usuário pressionar Enter
-input("Pressione Enter para sair...")
+input("\nPressione Enter para sair...")
